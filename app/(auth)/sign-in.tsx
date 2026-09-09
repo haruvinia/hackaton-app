@@ -76,6 +76,7 @@ export default function SignIn() {
             borderRadius: 30,
             width: "85%",
           }}
+          onPress={() => router.replace("/(tabs)/home")}
         >
           <Text
             style={{ fontSize: 16, fontWeight: "500", textAlign: "center" }}

@@ -80,6 +80,7 @@ export default function SelectAccountType() {
             paddingHorizontal: 80,
             borderRadius: 30,
           }}
+          onPress={() => router.push("/(auth)/sign-up")}
         >
           <Text style={{ fontSize: 15, fontWeight: "500" }}>Vamos começar</Text>
         </TouchableOpacity>
