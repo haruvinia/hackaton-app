@@ -94,7 +94,7 @@ export default function SelectAccountType() {
         >
           <Text style={{ color: "#fff" }}>Já possui conta?</Text>
           <TouchableOpacity onPress={() => router.push("/(auth)/sign-in")}>
-            <Text style={{ color: "#fff", fontWeight: "bold", color:"#FFC98B"}}>
+            <Text style={{ fontWeight: "bold", color:"#FFC98B"}}>
               Fazer login.
             </Text>
           </TouchableOpacity>

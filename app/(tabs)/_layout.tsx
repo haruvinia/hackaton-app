@@ -3,7 +3,21 @@ import { Tabs } from "expo-router";
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "#7B2CBF" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "#7B2CBF",
+        headerShown: false,
+        tabBarStyle: {
+          height: 85,
+          padding: 10,
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontFamily: "Inter, sans-serif",
+          marginTop: 8,
+        },
+      }}
+    >
       <Tabs.Screen
         name="home"
         options={{
@@ -18,7 +32,7 @@ export default function TabLayout() {
         options={{
           title: "Produtos",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome size={28} name="book" color={color} />
           ),
         }}
       />
@@ -27,7 +41,7 @@ export default function TabLayout() {
         options={{
           title: "Locais",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome size={28} name="map-marker" color={color} />
           ),
         }}
       />
@@ -36,7 +50,7 @@ export default function TabLayout() {
         options={{
           title: "Perfil",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome size={28} name="user" color={color} />
           ),
         }}
       />
