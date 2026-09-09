@@ -2,6 +2,7 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
+
 export default function Home() {
   return (
     <View style={styles.container}>
